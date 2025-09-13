@@ -9,6 +9,7 @@ import TabDetails from "./pages/TabDetails";
 import RecipeDetails from "./pages/RecipeDetails";
 import ScrollToTop from "./components/ScrollToTop";
 import IngredientDetails from "./pages/IngredientDetails";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
 
         <Route path="/recipe/:recipe" element={<RecipeDetails />} />
         <Route path="/ingredient/:ingredient" element={<IngredientDetails />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>
